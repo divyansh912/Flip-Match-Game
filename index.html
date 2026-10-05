@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flip Match Cards</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>Flip <span>Match</span></h1>
+
+        <p class="subtitle">
+            Find every matching pair!
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <span class="stat-label">Moves</span>
+                <span class="stat-value" id="moves">0</span>
+            </div>
+
+            <div class="stat">
+                <span class="stat-label">Time</span>
+                <span class="stat-value" id="time">00:00</span>
+            </div>
+
+            <div class="stat">
+                <span class="stat-label">Pairs</span>
+                <span class="stat-value" id="pairs">0 / 8</span>
+            </div>
+
+        </div>
+
+        <div class="board" id="board"></div>
+
+        <button class="restart" onclick="newGame()">
+            🔄 New Game
+        </button>
+
+    </div>
+
+
+    <!-- Win Screen -->
+
+    <div class="win-screen" id="winScreen">
+
+        <div class="win-box">
+
+            <div class="win-icon">🏆</div>
+
+            <h2>You Win!</h2>
+
+            <p id="result"></p>
+
+            <button class="play-again" onclick="newGame()">
+                Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
